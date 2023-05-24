@@ -16,13 +16,14 @@ html{
 
 body{
     overflow: auto hidden;
+    background: var(--bg-primary);
 }
 
 :root{
 
     /* colors */
 
-    --bg-primary:hsla(206, 100%, 97%, 1);
+    --bg-primary:hsla(148, 23%, 89%, 1);
     --bg-secondary:hsla(206, 100%, 91%, 1);
 
     --white:hsl(0, 0%, 100%);
