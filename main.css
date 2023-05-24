@@ -34,6 +34,19 @@ body{
 
 }
 
-body{
-    background: var(--bg-primary);
+.container{
+    width: 1366px;
+    padding-inline: 12.3rem;
+}
+
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
 }
