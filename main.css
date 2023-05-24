@@ -18,3 +18,22 @@ body{
     overflow: auto hidden;
 }
 
+:root{
+
+    /* colors */
+
+    --bg-primary:hsla(206, 100%, 97%, 1);
+    --bg-secondary:hsla(206, 100%, 91%, 1);
+
+    --white:hsl(0, 0%, 100%);
+    
+    --primary-clr-500:hsla(209, 77%, 43%, 1);
+    --primary-clr-700:hsla(209, 85%, 26%, 1);
+
+
+
+}
+
+body{
+    background: var(--bg-primary);
+}
