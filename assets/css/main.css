@@ -22,8 +22,9 @@ html{
 
 body{
     font-family: var(--ff-body);
-    overflow: auto hidden;
+    /* overflow: auto hidden; */
     background: var(--bg-primary);
+    height: 3600px;
 }
 
 :root{
@@ -31,12 +32,15 @@ body{
     /* colors */
 
     --bg-primary:hsla(206, 100%, 91%, 1);
+    --header-scroll:hsla(209, 77%, 43%, 0.231);
 
     --white:hsl(0, 0%, 100%);
     --white-alt:hsla(0, 0%, 98%, 1);
 
     --primary-clr-500:hsla(209, 77%, 43%, 1);
     --primary-clr-700:hsla(209, 85%, 26%, 1);
+
+
 
     --secondary-clr-700:hsla(210, 11%, 15%, 1);
     --secondary-clr-500:hsla(210, 9%, 31%, 1);
@@ -101,8 +105,16 @@ body{
 }
 
 header{
-    padding-block:2.9rem ;
+    padding:2.6rem 12.4rem;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: background var(--transition-500);
 }    
+
+header.scroll{
+    background: var(--header-scroll);
+}
 
 
 .menu-items > li{
@@ -140,7 +152,7 @@ header{
     border-radius: var(--radius);
     font-weight: var(--fw-bold);
     height: 3.8rem;
-    margin-left: 19.5rem;
+    margin-left: 17.5rem;
     padding: 1.2rem 2.4rem;
     width: 18.5rem;
     transition: all var(--transition-500);
@@ -150,3 +162,4 @@ header{
     background: #1b76ccf6;
     color: var(--white);
 }
+
