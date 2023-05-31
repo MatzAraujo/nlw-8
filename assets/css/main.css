@@ -90,9 +90,19 @@ body{
 .fs-16{font-size: var(--fs-16);}
 .fs-14{font-size: var(--fs-14);}
 
+.title:not(1){
+    color: var(--secondary-clr-700);
+}
+
+.title{
+    font-weight: var(--fw-bold) ;
+}
+
+
 p{
     color: var(--secondary-clr-500);
 }
+
 
 .container{
     width: 1366px;
@@ -215,4 +225,11 @@ main{
     border-radius: .6rem;
     position: relative;
     top: 19rem;
+    text-align: center;
+}
+
+.divider{
+    border:1px solid #1971C2;
+    height: 8.3rem;
+    opacity: 0.5;
 }
