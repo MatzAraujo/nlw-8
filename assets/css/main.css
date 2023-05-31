@@ -65,7 +65,7 @@ body{
     /* layout */
 
     --radius:4rem;
-
+    
     --transition-200:.2s;
     --transition-300:.3s;
     --transition-400:.4s;
@@ -107,8 +107,9 @@ p{
 
 .even-columns{
     display: grid;
-    grid-auto-columns: 65rem;
+    grid-auto-columns: 600px;
     grid-auto-flow: column;
+    gap: 5.1rem;
     
 }
 
@@ -119,10 +120,11 @@ header{
     left: 0;
     width: 100%;
     transition: background var(--transition-500);
+    z-index: 1000;
 }    
 
 header.scroll{
-    background: var(--header-scroll);
+    background:var(--header-scroll);
 }
 
 
@@ -200,7 +202,17 @@ main{
     text-align: center;
 }
 
-img{
+#home img{
     height: 54.7rem;
+    position: absolute;
+    top: 10rem;
 }
 
+.stats{
+    height: 21rem;
+    padding: 6rem 12rem;
+    background: var(--white);
+    border-radius: .6rem;
+    position: relative;
+    top: 19rem;
+}
