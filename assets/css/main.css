@@ -184,7 +184,6 @@ header.scroll{
     color: var(--white);
 }
 
-
 main{
     margin-top: calc(2.6rem + 12rem);
 }
@@ -214,17 +213,18 @@ main{
 
 #home img{
     height: 54.7rem;
-    position: absolute;
-    top: 10rem;
+    position: relative;
+    bottom: 2rem;
 }
 
 .stats{
     height: 21rem;
+    width: 112rem;
     padding: 6rem 12rem;
     background: var(--white);
     border-radius: .6rem;
-    position: relative;
-    top: 19rem;
+    position: absolute;
+    top: 67rem;
     text-align: center;
 }
 
@@ -232,4 +232,12 @@ main{
     border:1px solid #1971C2;
     height: 8.3rem;
     opacity: 0.5;
+}
+
+section:not(#home){
+    padding-top: 25rem;
+}
+
+#services{
+    text-align: center;
 }
