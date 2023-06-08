@@ -45,6 +45,7 @@ body{
 
     --secondary-clr-700:hsla(210, 11%, 15%, 1);
     --secondary-clr-500:hsla(210, 9%, 31%, 1);
+    --seconday-clr-400:hsla(104, 16%, 24%, 1);
     
 
     /* fonts */
@@ -81,6 +82,7 @@ body{
 .primary-clr-700{color: var(--primary-clr-700);}
 .secondary-clr-700{color: var(--secondary-clr-700);}
 .secondary-clr-500{color: var(--secondary-clr-500);}
+.secondary-clr-400{color: var(--secondary-clr-400);}
 
 .fw-regular{font-weight: var(--fw-regular);}    
 .fw-semi-bold{font-weight: var(--fw-semi-bold);}    
@@ -124,7 +126,10 @@ p{
     gap: 5.1rem;
 }
 
-section:not(#home){padding-top: 25rem;}
+section:not(#home){
+    padding-top: 25rem;
+    padding-bottom: 16rem;
+}
 
 section{padding-inline: 12.4rem;}
 
@@ -246,8 +251,14 @@ main{
     background: var(--white-alt);
 }
 
+#services .flex:nth-child(2){
+    margin-top: 4rem;
+}
+
 .cards{
     margin-top: 6.4rem;
+    width: 100%;
+    gap:2rem ;
 }
 
 .card{
@@ -255,4 +266,11 @@ main{
     width: 34.7rem;
     padding: 2.4rem;
     background: var(--white);
+}
+
+.card p:not(.title){
+    margin-top: 1.6rem;
+    color: var(--seconday-clr-400);
+    max-width: 500px;
+    text-align: justify;
 }
